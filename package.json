@@ -2,9 +2,9 @@
   "name": "API_utilitarios",
   "version": "1.0.0",
   "description": "API para acessar um banco de dados simples para utilitarios como : Protocolo de retirada, relatorio de imuno e etc.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/rodox021/API_utilitarios#readme",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "mongoose": "^5.11.10",
     "nodemon": "^2.0.6"
   }
 }
