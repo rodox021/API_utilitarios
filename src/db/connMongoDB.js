@@ -6,11 +6,11 @@ const mongoose = config.mongoose
 mongoose.set('useNewUrlParser', true)
 mongoose.set('useCreateIndex', true)
 
-module.exports  = () => {
+ module.exports  = async() => {
 
     
     if(config.db.connString){ 
-        mongoose.connect(config.db.connString, {
+       await mongoose.connect(config.db.connString, {
         }).then(() => {
             console.log("Conexão com MongoDB realizada com sucesso!");
         }).catch((erro) => {
