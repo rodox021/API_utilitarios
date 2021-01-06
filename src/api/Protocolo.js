@@ -58,6 +58,18 @@ const protocolo = {
                 })
             })
     },
+    carregarPorData(req, res){
+        Protocolo.find({data:{$gte: req.query.di}}).and({data:{$lte: req.query.df}})
+            .then((prot)=>{
+                return res.status(200).json(prot)
+            })
+            .catch((erro)=>{
+                return res.status(400).json({
+                    error:true,
+                    msg: "Nenhum protocolo foi encontraro com esse ID: " + erro
+                })
+            })
+    },
     cadastrar(req, res){
         const prot = Protocolo.create(req.body,(err=>{
             if (err) return res.status(400).json({

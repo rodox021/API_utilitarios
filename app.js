@@ -27,6 +27,8 @@ app.get('/', (req,res) =>{res.send("teste de get")})
 app.get('/carregar/:id', protocolo.carregarPorid)
 app.get('/carregarNome/:nome', protocolo.carregarPorNome)
 app.get('/carregarExame/:num', protocolo.carregarPorExame)
+app.get('/carregarData/', protocolo.carregarPorData)
+
 app.get('/carregar', protocolo.carregar)
 app.post('/cadastro', protocolo.cadastrar)
 app.put('/cadastro/:id', protocolo.atualizar)
