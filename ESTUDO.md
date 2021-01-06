@@ -7,6 +7,7 @@
 * **NODEMON** => _restarta o servidor sempre que tiver mudança no codigo_
 * **DOTENV** => _tarabalhar com variaveis de sistema no arquivo .env_
 * **MONGOOSE** => _trabalhar com o banco de dados não relacional MongoDB_
+* **CORS** => _para autorizar a solicitação de outros aplicativos_
 
 **intalação com NPM**
 ```
