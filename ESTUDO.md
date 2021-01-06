@@ -3,6 +3,7 @@
 ## Dependencias basica
 
 
+<<<<<<< HEAD
 * **EXPRESS** => _essa depedencia é para rodar servidor e gerencias as requisições como GET POST E etc.._
 * **NODEMON** => _restarta o servidor sempre que tiver mudança no codigo_
 * **DOTENV** => _tarabalhar com variaveis de sistema no arquivo .env_
@@ -15,6 +16,11 @@ npm i NOME_DA_DEPENDENCIA
 ---
  ## Pastas Basicas
 Criar a pastar **_SRC_** que será a pasta rais da aplicação, dentro de SRC criar as seguintes pastas:
+=======
+~~~Instalação no node
+
+```npm i express ```
+>>>>>>> 217e003b33f3e4562e133d9fef33b0867d93e266
 
 * **config** (vai servir para criar arquivos de configurações)
 * **model** (para criar os arquivos de modelo do banco de dados )
