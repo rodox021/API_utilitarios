@@ -2,7 +2,7 @@
   "name": "API_utilitarios",
   "version": "1.0.0",
   "description": "API para acessar um banco de dados simples para utilitarios como : Protocolo de retirada, relatorio de imuno e etc.",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "start": "nodemon"
   },

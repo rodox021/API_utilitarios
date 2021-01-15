@@ -16,12 +16,15 @@ connMongoDB() // conecatando com o banco de dados
 
 
 
-app.use((req, res, next)=>{
+app.use((req, res, next) => {
+    //console.log("Acessou o Middleware!");
+    
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods", 'GET,PUT,POST,DELETE');
+    
     app.use(cors());
     next();
-})
+});
 
 app.get('/', (req,res) =>{res.send("teste de get")})
 app.get('/carregar/:id', protocolo.carregarPorid)

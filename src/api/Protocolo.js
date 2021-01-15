@@ -23,7 +23,7 @@ const protocolo = {
 
     },
     carregarPorNome(req, res){
-        Protocolo.find({ nomePaciente: {$regex:req.params.nome || " ent"}})
+        Protocolo.find({ nomePaciente: {$regex:req.params.nome || " ent"}}).pretty()
             .then((prot)=>{
                 return res.status(200).json(prot)
             })
@@ -70,8 +70,8 @@ const protocolo = {
                 })
             })
     },
-    cadastrar(req, res){
-        const prot = Protocolo.create(req.body,(err=>{
+    async cadastrar(req, res){
+         await Protocolo.create(req.body,(err=>{
             if (err) return res.status(400).json({
                 erro:true,
                 msg: "Protocolo cadastro não afetuado!" + err
